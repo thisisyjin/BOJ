@@ -1,0 +1,17 @@
+// input: ten Numbers (separator: \n) 
+// output : input % 42 - Count different value
+
+// ex> input = ['39','40','41','42','43','44','82','83','84','85'] (Result: 6)
+
+const input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n').map(x=>Number(x));
+const numArr = [];
+
+input.forEach(x => {
+  const num = x % 42;
+  
+  if(numArr.indexOf(num) === -1) {
+    numArr.push(num);
+    }
+ });
+ 
+ console.log(numArr.length);
