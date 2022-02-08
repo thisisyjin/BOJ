@@ -14,4 +14,4 @@ for(let i=1; i<9; i++) {
 }
 
 console.log(max);
-console.log(index);
+console.log(index + 1);
